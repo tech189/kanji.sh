@@ -1,60 +1,94 @@
-# Kanji.sh
 
-<div align="center">
-    <img width="128" height="128" src="https://kanji.sh/logo192.png" alt="kanji.sh logo">
-    <br/>
-    <br/>
-    <b> Kanji Worksheet Generator </b>
-    <br/>
-</div>
-<br/>
-<div align="center">
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/aruke/kanji.sh/Deploy?label=deploy&logo=github"> 
-<img alt="Website" src="https://img.shields.io/website?label=vercel&logo=vercel&up_color=black&up_message=kanji.sh&url=https%3A%2F%2Fkanji.sh"> 
-<img alt="Codacy grade" src="https://img.shields.io/codacy/grade/5b4867029b8b4bd1bf6b7c638d5bacee?logo=codacy"> 
-<img alt="GitHub" src="https://img.shields.io/github/license/aruke/kanji.sh"> 
-</div>
 
-## 🇯🇵 What is it?
+# KanjiSh
 
-This code generates printable handwriting practice worksheets for **Japanese Kanji** by **JLPT** level, **Grade**
-Level, **Wanikani** Level, and **Frequency**. You can download it from the website. Then, learn Kanji writing by
-following the strokes and practice couple of times!
+This project was generated using [Nx](https://nx.dev).
 
-## 🖥 Website screenshot
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
-<div align="center">
-    <img src="https://kanji.sh/assets/desktop-screenshot.png" alt="Kanji.sh Desktop Screenshot">
-</div>
+🔎 **Smart, Fast and Extensible Build System**
 
-## 🛠 Built With
+## Adding capabilities to your workspace
 
--   [NodeJS](https://nodejs.org/en/)
--   [ReactJS](https://reactjs.org/)
--   [NextJS](https://nextjs.org/)
--   [Material UI](https://material-ui.com/)
--   Hosted on [Vercel](https://vercel.com)
+Nx supports many plugins which add capabilities for developing different types of applications and different tools.
 
-### 💻 Build Locally
+These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
 
-1. Clone the project.
-2. `cd` into the cloned direcotry, and install dependencies with `npm install`
-3. Run script `npm start dev`.
-4. The app will be up and running.
+Below are our core plugins:
 
-> Note: You cannot download the PDFs while running locally.
+- [React](https://reactjs.org)
+  - `npm install --save-dev @nrwl/react`
+- Web (no framework frontends)
+  - `npm install --save-dev @nrwl/web`
+- [Angular](https://angular.io)
+  - `npm install --save-dev @nrwl/angular`
+- [Nest](https://nestjs.com)
+  - `npm install --save-dev @nrwl/nest`
+- [Express](https://expressjs.com)
+  - `npm install --save-dev @nrwl/express`
+- [Node](https://nodejs.org)
+  - `npm install --save-dev @nrwl/node`
 
-## 💬 Contributing
+There are also many [community plugins](https://nx.dev/community) you could add.
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Generate an application
 
-## 💌 Acknowledgments
+Run `nx g @nrwl/react:app my-app` to generate an application.
 
--   Thanks Ulrich Apel for [KanjiVG](https://kanjivg.tagaini.net/) project!
--   Thanks [Wanikani](http://wanikani.com/) for free Kanji data!
--   Thanks [Katerina Limpitsouni](https://twitter.com/ninaLimpi) for the awesome collection of illustrations
-    at [undraw.io](https://undraw.co/)!
+> You can use any of the plugins above to generate applications as well.
 
-## 📜 License
+When using Nx, you can create multiple applications and libraries in the same workspace.
 
-[MIT](LICENSE)
+## Generate a library
+
+Run `nx g @nrwl/react:lib my-lib` to generate a library.
+
+> You can also use any of the plugins above to generate libraries as well.
+
+Libraries are shareable across libraries and applications. They can be imported from `@kanji.sh/mylib`.
+
+## Development server
+
+Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+
+## Build
+
+Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+
+Run `nx affected:test` to execute the unit tests affected by a change.
+
+## Running end-to-end tests
+
+Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+
+Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
+
+## Understand your workspace
+
+Run `nx graph` to see a diagram of the dependencies of your projects.
+
+## Further help
+
+Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+
+
+## ☁ Nx Cloud
+
+### Distributed Computation Caching & Distributed Task Execution
+
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
+
+Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
+
+Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
+
+Visit [Nx Cloud](https://nx.app/) to learn more.

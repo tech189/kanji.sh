@@ -1,4 +1,8 @@
+# Files added here are ignored from prettier formatting
 .next
 generator/build
 node_modules
 app/src/images/anim
+
+/dist
+/coverage
